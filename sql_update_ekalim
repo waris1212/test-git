@@ -1,0 +1,30 @@
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='radiologi' WHERE `NAMA_TARIF`='Biaya Radiologi';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='kamar' where `NAMA_TARIF`='Biaya Pendaftaran';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='prosedur_non_bedah' where `NAMA_TARIF`='Biaya Tindakan';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='tenaga_ahli' where `NAMA_TARIF`='Biaya Dokter';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='obat' where `NAMA_TARIF`='Biaya Obat & Alkes';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='kamar' where `NAMA_TARIF` ='Biaya Kamar';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='laboratorium' where `NAMA_TARIF`='Biaya Laboratorium';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='sewa_alat' where `NAMA_TARIF`='Biaya Sewa Alat';
+UPDATE `tabel_transaksi` SET `LABEL_ECLAIM`='penunjang' where `NAMA_TARIF`='Biaya Lainnya';
+
+
+
+
+
+UPDATE `tabel_pesan_tindakan` SET  `KETERANGAN` ='prosedur_non_bedah' WHERE `STATUS`='PesanTindakan';
+UPDATE `tabel_pesan_tindakan` SET  `KETERANGAN` ='prosedur_bedah' WHERE `JABATAN`='Operasi';
+UPDATE `tabel_pesan_konsultasi` SET `LABEL_ECLAIM`='tenaga_ahli';
+UPDATE `tabel_pesan_lainnya` SET `LABEL_ECLAIM` ='penunjang';
+UPDATE `tabel_pesan_tindakan_oksigen` SET `LABEL_ECLAIM`='prosedur_non_bedah';
+UPDATE `tabel_pesan_kamar_PJP` SET `LABEL_ECLAIM` ='kamar';
+UPDATE `tabel_pesan_pemeriksaanrad` SET `LABEL_ECLAIM`='radiologi';
+UPDATE `tabel_sewa_alat` SET `LABEL_ECLAIM`='sewa_alat';
+UPDATE `M_obat` SET `LABEL_ECLAIM`='obat' where `LABEL_ECLAIM` ='Obat';
+UPDATE `M_obat` SET `LABEL_ECLAIM`='obat_kronis' where `LABEL_ECLAIM` ='Obat Kronis';
+UPDATE `M_obat` SET `LABEL_ECLAIM`='alkes' where `LABEL_ECLAIM`='Alkes';
+UPDATE `M_obat` SET `LABEL_ECLAIM`='obat' where `LABEL_ECLAIM` ='PKRT';
+UPDATE `M_obat` SET `LABEL_ECLAIM`='obat' where `LABEL_ECLAIM` ='LAIN-LAIN';
+UPDATE `master_lab` SET `LABEL_ECLAIM`='laboratorium';
+
+
