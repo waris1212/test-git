@@ -1,0 +1,1 @@
+UPDATE `tabel_pengguna_asuransi` P LEFT JOIN tabel_bpjs_klaim B ON P.`NODAFTAR`=B.NO_DAFTAR SET P.`SEP`=B.`SEP`
